@@ -21,4 +21,6 @@ $ cd PrometheusWithGrafana/
 ```bash  
 $ vagrant up
 ```
-4) After the vagrant virtual machine will have been setuped  you can try to check `Prometheus`  admin page at [http://localhost:9090](http://localhost:9090/graph) and `Grafana` web interface at [http://localhost:3000](http://localhost:3000).
+4) After the vagrant virtual machine will have been setuped  you can try to check `Prometheus`  admin page at [http://localhost:9090](http://localhost:9090/graph) and `Grafana` web interface at [http://localhost:3000](http://localhost:3000). Ports 9090 & 3000 are exposed and bound to the host os via Vagrantfile so we can access dashboards from virtual machine to host os.
+
+Default username & password for grafana is **admin**
