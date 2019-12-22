@@ -1,11 +1,24 @@
-# Prometheus with Grafana using Ansible
+# Prometheus + Grafana inside Vagrant
 
-In this project, we are configurating prometheus, node_exporter, alertmanager and Grafana. We setup Grafana dashboard which can use source as Prometheus.
+In this project, we are configurating prometheus, node_exporter, alertmanager and Grafana in Vagrant VM. We setup Grafana dashboard which can use source as Prometheus.
 
-## Getting Started
 
-Step 1: Update ip address of instances in inventory file.
-
-Step 2: Run ansible command to setup prometheus, node_exporter, alertmanager and Grafana services
-
-Ansible command: ansible-playbook playbook.yml
+# Run  
+0) `vagrant` and `Ansible` should be installed on your system
+```
+$ vagrant -v
+Vagrant 2.2.5
+```
+1) Clone this repository
+```bash  
+$ git clone https://github.com/ligain/PrometheusWithGrafana.git  
+``` 
+2) Go to project folder
+```bash  
+$ cd PrometheusWithGrafana/
+```  
+3) Run `Vagrantfile`
+```bash  
+$ vagrant up
+```
+4) After the vagrant virtual machine will have been setuped  you can try to check `Prometheus`  admin page at [http://localhost:9090](http://localhost:9090/graph) and `Grafana` web interface at [http://localhost:3000](http://localhost:3000).
